@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="0dp"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+        app:titleTextColor="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"/>
+    <GridLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid_layout"
+        android:columnCount="5">
+
+    </GridLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="@dimen/bingo_width"
+            android:layout_height="@dimen/bingo_width"
+            android:textSize="@dimen/bingo_text"
+            android:text="B"
+            android:id="@+id/bingo_text_b"
+            />
+        <TextView
+            android:layout_width="@dimen/bingo_width"
+            android:layout_height="@dimen/bingo_width"
+            android:textSize="@dimen/bingo_text"
+            android:text="I"
+            android:id="@+id/bingo_text_i"
+
+            />
+        <TextView
+            android:layout_width="@dimen/bingo_width"
+            android:layout_height="@dimen/bingo_width"
+            android:textSize="@dimen/bingo_text"
+            android:text="N"
+            android:id="@+id/bingo_text_n"
+            />
+        <TextView
+            android:layout_width="@dimen/bingo_width"
+            android:layout_height="@dimen/bingo_width"
+            android:textSize="@dimen/bingo_text"
+            android:text="G"
+            android:id="@+id/bingo_text_g"
+            />
+
+        <TextView
+            android:layout_width="@dimen/bingo_width"
+            android:layout_height="@dimen/bingo_width"
+            android:textSize="@dimen/bingo_text"
+            android:text="O"
+            android:id="@+id/bingo_text_o"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
