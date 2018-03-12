@@ -1,4 +1,4 @@
-# Bingo
+<h1 style="color:#00FF00;">Bingo</h1>
 This is the Traditional game Bingo with a twist.
 This game can be played between two player online using internet.
 App uses Firebase as the authentication server and Firebase Realtime database as the connectivity.
